@@ -1,0 +1,23 @@
+{
+    "name": "welfare-muze/razorpay-backend",
+    "description": "PHP backend for Razorpay integration with Welfare Muze NGO",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "razorpay/razorpay": "^2.9",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "WelfareMuze\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo 'Razorpay PHP SDK installed successfully!'"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
